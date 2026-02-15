@@ -39,13 +39,13 @@
               </picture>
             </a>
           </li>
-          <li class="list_item">
+          <!-- <li class="list_item">
             <a href="<?php echo esc_url(home_url('/hamamatsu-desc')); ?>" class="fc-brown">
               <picture class="img __2">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/nav_txt_2.svg" alt="居心地の良い有料自習室 浜松デスク">
               </picture>
             </a>
-          </li>
+          </li> -->
           <li class="list_item">
             <a href="<?php echo esc_url(home_url('/faq')); ?>" class="fc-white">よくあるご質問</a>
           </li>

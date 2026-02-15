@@ -366,9 +366,9 @@ Template Name: コース・料金
                 </td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
                 <td class="course regular">
-                  週1回 1時間 22,000円<span class="s-txt">(税込)</span><br>
-                  週1回 1.5時間 33,000円<span class="s-txt">(税込)</span><br>
-                  週1回 2時間 44,000円<span class="s-txt">(税込)</span><br>
+                  週1回 1時間 26,400円<span class="s-txt">(税込)</span><br>
+                  週1回 1.5時間 39,600円<span class="s-txt">(税込)</span><br>
+                  週1回 2時間 52,800円<span class="s-txt">(税込)</span><br>
                   <span class="note">※月の週数により変動します。</span>
                 </td>
                 <td class="course regular">要相談</td>
