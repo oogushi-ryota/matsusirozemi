@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*
+Theme Name: MATSUSHIRO-SEMINAR
+*/
+
+@media (max-width: 767px) {
+  .hamamatu-desc .cm-sec.sec03 .cm-sec_cont {
+    height: 60rem;
+  }
+}

@@ -1,0 +1,488 @@
+.course {
+  overflow: hidden;
+
+  .tabArea {
+    margin-top: 4rem;
+
+    .img {
+      width: 100vw;
+    }
+
+    .ttl {
+      margin-top: 4rem;
+    }
+
+    .tabList {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 3.2rem;
+      margin-top: 7.2rem;
+      cursor: pointer;
+
+      @media (max-width: 767px) {
+        gap: 1.6rem 0;
+        margin-top: 3.2rem;
+      }
+
+      &_item {
+        .img {
+          width: 33.6rem;
+          opacity: .5;
+
+          @media (max-width: 767px) {
+            width: 16rem;
+          }
+        }
+
+        &.is-active {
+          .img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .courseCont {
+    .mv {
+      width: 100%;
+      height: 47rem;
+      background-image: url(../img/course/elementary_mv.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin-top: 4rem;
+
+      @media (max-width: 767px) {
+        background-image: url(../img/course/elementary_mv-sp.png);
+        height: 22.3rem;
+        background-position: center;
+      }
+
+      .txtArea {
+        width: 47rem;
+        height: 47rem;
+        background-image: url(../img/course/elementary_obj.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        position: relative;
+
+        @media (max-width: 767px) {
+          display: none;
+          width: 18rem;
+          height: 18rem;
+        }
+
+        .ttl {
+          font-size: 3.2rem;
+          text-align: center;
+          line-height: 150%;
+          white-space: nowrap;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+
+          @media (max-width: 767px) {
+            font-size: 1.6rem;
+            line-height: 120%;
+          }
+        }
+      }
+    }
+
+    .detail {
+      width: 100%;
+      height: 105.4rem;
+      background-image: url(../img/course/sec01_bg.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-top: 4rem;
+      padding: 5.6rem 4.2rem 8rem;
+
+      @media (max-width: 767px) {
+        height: auto;
+        background-image: unset;
+        border: solid 2px #64bbba;
+        padding: 3.2rem 1.2rem;
+      }
+
+      .img {
+        width: 16rem;
+        margin: 0 auto;
+
+        @media (max-width: 767px) {
+          width: 8rem;
+        }
+      }
+
+      .ttl {
+        color: #64bbba;
+        font-size: 5.6rem;
+        text-align: center;
+        margin-top: 2.4rem;
+
+        @media (max-width: 767px) {
+          font-size: 2.4rem;
+        }
+      }
+
+      .txtArea {
+        .ttl {
+          font-size: 3.2rem;
+          text-align: left;
+
+          @media (max-width: 767px) {
+            font-size: 2.4rem;
+          }
+        }
+
+        .txt {
+          font-size: 2.8rem;
+          line-height: 150%;
+          margin-top: 2.4rem;
+
+          @media (max-width: 767px) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .tableWrap {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 4rem;
+      border: solid 1px #000;
+
+      thead {
+        background-color: #64bbba;
+
+        tr {
+          th {
+            font-size: 2.4rem;
+            padding:1.6rem;
+            vertical-align: middle;
+
+            @media (max-width: 767px) {
+              font-size: 1.6rem;
+              white-space: nowrap;
+            }
+
+            &:not(:last-child) {
+              border-right: solid 1px #000;
+            }
+
+            .s-txt {
+              font-size: 2.4rem;
+
+              @media (max-width: 767px) {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          &:not(:last-child) {
+            border-bottom: solid 1px #000;
+          }
+
+          td {
+            font-size: 3.2rem;
+            text-align: center;
+            padding: 2rem;
+            vertical-align: middle;
+
+            @media (max-width: 767px) {
+              font-size: 1.4rem;
+              white-space: nowrap;
+              padding: 1.6rem;
+            }
+
+            &:not(:last-child) {
+              border-right: solid 1px #000;
+            }
+
+            &.course {
+              font-size: 2.4rem;
+
+              @media (max-width: 767px) {
+                font-size: 1.6rem;
+                white-space: nowrap;
+              }
+            }
+
+            .s-txt {
+              font-size: 1.8rem;
+
+              @media (max-width: 767px) {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .flow {
+      width: 100%;
+      height: 96rem;
+      background-image: url(../img/course/sec02_bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 3.2rem;
+      padding: 5.4rem 0 4rem;
+
+      @media (max-width: 767px) {
+        height: auto;
+        background-image: unset;
+        padding: 3.2rem 0;
+      }
+
+      .list {
+        list-style: none;
+        margin-top: 3.2rem;
+
+        @media (max-width: 767px) {
+          margin-left: -2rem;
+        }
+
+        &_item {
+          width: 112rem;
+          height: 16.7rem;
+          background-image: url(../img/course/sec02_list-bg.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 4rem;
+          margin: 0 auto;
+          padding-left: 3.2rem;
+
+          @media (max-width: 767px) {
+            display: block;
+            background-image: unset;
+            width: 100%;
+            height: auto;
+            gap: 0;
+            padding-left: 1.2rem;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          &:not(:first-child) {
+            margin-top: 2.4rem;
+
+            @media (max-width: 767px) {
+              margin-top: 3.2rem;
+            }
+          }
+
+          .num {
+            font-size: 3.2rem;
+
+            @media (max-width: 767px) {
+              font-size: 1.2rem;
+              position: relative;
+              z-index: 1;
+
+              &::after {
+                content: "";
+                display: inline-block;
+                width: 4rem;
+                height: 4rem;
+                background-color: rgba($color: #64BBBA, $alpha: .5);
+                position: absolute;
+                top: -1rem;
+                left: 0;
+                z-index: -1;
+                transform: rotate(45deg);
+                transform-origin: center;
+              }
+            }
+          }
+
+          .txtArea {
+            @media (max-width: 767px) {
+              background-color: #f5f2e8;
+              margin-top: 1rem;
+              padding: 2rem;
+            }
+
+            .ttl {
+              font-size: 3.2rem;
+
+              @media (max-width: 767px) {
+                font-size: 1.8rem;
+              }
+            }
+
+            .txt {
+              font-size: 2.4rem;
+              line-height: 150%;
+
+              @media (max-width: 767px) {
+                font-size: 1.4rem;
+                margin-top: .8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.junior-high-school {
+      .mv {
+        background-image: url(../img/course/junior-high-school_mv.jpg);
+
+        @media (max-width: 767px) {
+          background-image: url(../img/course/junior-high-school_mv-sp.png);
+        }
+
+        .txtArea {
+          background-image: url(../img/course/junior-high-school_obj.svg);
+        }
+      }
+
+      .detail {
+        height: 145rem;
+        background-image: url(../img/course/sec01_bg_junior-high-school.svg);
+
+        @media (max-width: 767px) {
+          height: unset;
+          background-image: unset;
+        }
+
+        .txtArea {
+          margin-top: 3.2rem;
+
+          &:first-of-type {
+            margin-top: 7.2rem;
+
+            @media (max-width: 767px) {
+              margin-top: 3.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    &.senior-high-school {
+      .mv {
+        background-image: url(../img/course/senior-high-school.jpg);
+
+        @media (max-width: 767px) {
+          background-image: url(../img/course/senior-high-school-sp.png);
+        }
+
+        .txtArea {
+          background-image: url(../img/course/senior-high-school_obj.svg);
+        }
+      }
+
+      .detail {
+        height: 159rem;
+        background-image: url(../img/course/sec01_bg_senior-high-school.svg);
+
+        @media (max-width: 767px) {
+          height: unset;
+          background-image: unset;
+        }
+
+        .txtArea {
+          margin-top: 5.6rem;
+
+          @media (max-width: 767px) {
+            margin-top: 3.2rem;
+          }
+
+          &:first-of-type {
+            margin-top: 7.2rem;
+
+            @media (max-width: 767px) {
+              margin-top: 3.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    &.tutoring {
+      .mv {
+        background-image: url(../img/course/tutoring.jpg);
+
+        @media (max-width: 767px) {
+          background-image: url(../img/course/tutoring-sp.png);
+        }
+
+        .txtArea {
+          background-image: url(../img/course/tutoring_obj.svg);
+        }
+      }
+
+      .detail {
+        height: 54rem;
+        background-image: url(../img/course/sec01_bg_tutoring.svg);
+        padding: 5.6rem 14rem 8rem;
+
+        @media (max-width: 767px) {
+          height: unset;
+          background-image: unset;
+          padding: 1.2rem;
+        }
+
+        .txtArea {
+          margin-top: 5.6rem;
+
+          @media (max-width: 767px) {
+            margin-top: 3.2rem;
+          }
+
+          &:first-of-type {
+            margin-top: 7.2rem;
+
+            @media (max-width: 767px) {
+              margin-top: 3.2rem;
+            }
+          }
+        }
+      }
+
+      table {
+        tbody {
+          tr {
+            td {
+              font-size: 3.2rem;
+              line-height: 150%;
+
+              @media (max-width: 767px) {
+                font-size: 1.6rem;
+              }
+
+              .note {
+                font-size: 2.4rem;
+
+                @media (max-width: 767px) {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

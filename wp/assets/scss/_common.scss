@@ -1,0 +1,178 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  letter-spacing: 0em;
+  background-color: #ffffff;
+
+  &.js_active {
+    overflow: hidden;
+  }
+}
+
+main {
+  @media (max-width: 767px) {
+    padding-top: 4.7rem;
+  }
+}
+
+// PC/SP切り替え
+@media (max-width: 767px) {
+  .is-pc {
+    display: none !important;
+  }
+}
+
+.is-sp {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .is-sp {
+    display: block !important;
+  }
+}
+// PC/SP切り替え
+
+
+// フォント
+.regular {
+  font-weight: 400;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.cm-f-tenmincho {
+  font-family: "ten-mincho-text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cm-f-fredericka {
+  font-family: "fredericka-the-greatest", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+// フォント
+
+
+// コンテンツ幅
+.cm-inner {
+  width: 144rem;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+// コンテンツ幅
+
+
+// 文字色
+.fc-white {
+  color: #fff !important;
+}
+
+.fc-brown {
+  color: #5c3d39 !important;
+}
+
+.fc-blue {
+  color: #214862 !important;
+}
+
+.fc-orange {
+  color: #e3542b !important;
+}
+// 文字色
+
+// スワイパー
+.swiper-horizontal {
+  height: unset !important;
+}
+// スワイパー
+
+// ページタイトル
+.pageTtl {
+  font-size: 4.8rem;
+  font-weight: 900;
+  text-align: center;
+  font-family: "ten-mincho-text", serif;
+  font-style: normal;
+
+  @media (max-width: 767px) {
+    font-size: 3.2rem;
+  }
+}
+// ページタイトル
+
+// ニュースリスト
+.newsList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8rem;
+
+  @media (max-width: 767px) {
+    gap: 4rem;
+  }
+
+  &_item {
+    width: 42rem;
+    height: 46rem;
+    background-image: url(../img/top/news_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 4rem;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 36.6rem;
+      padding: 2rem 1.6rem;
+    }
+
+    .date {
+      font-size: 2.4rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .ttl {
+      font-size: 2.4rem;
+      line-height: 150%;
+      margin-top: .8rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    .img {
+      aspect-ratio: 358 / 239;
+      margin-top: 1.6rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+// ニュースリスト

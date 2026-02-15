@@ -1,0 +1,368 @@
+.hamamatu-desc {
+  overflow: hidden;
+
+  .sec01 {
+    margin-top: 4rem;
+
+    @media (max-width: 767px) {
+      margin-top: 1.6rem;
+    }
+
+    &_cont {
+      width: 100%;
+      background-color: #f4f1e7;
+      padding: 2.4rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        padding: .8rem;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        width: 101%;
+        height: .4rem;
+        background-color: #cec3a5;
+        border-radius: 100vmax;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+
+      .flexWrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+
+        @media (max-width: 767px) {
+          flex-direction: column-reverse;
+        }
+
+        .left {
+          .img {
+            width: 32rem;
+
+            @media (max-width: 767px) {
+              width: 100%;
+            }
+          }
+        }
+
+        .right {
+          .txt {
+            font-size: 2.4rem;
+            line-height: 150%;
+
+            @media (max-width: 767px) {
+              font-size: 1.4rem;
+            }
+
+            &:not(:first-child) {
+              margin-top: 5.6rem;
+
+              @media (max-width: 767px) {
+                margin-top: 1.6rem;
+              }
+            }
+          }
+
+          .time {
+            margin-top: 5.6rem;
+
+            @media (max-width: 767px) {
+              margin-top: 1.6rem;
+            }
+
+            .list {
+              list-style: none;
+              margin-top: 2.4rem;
+
+              @media (max-width: 767px) {
+                margin-top: 1.6rem;
+              }
+
+              &_item {
+                font-size: 2.4rem;
+                line-height: 1em;
+
+                @media (max-width: 767px) {
+                  font-size: 1.8rem;
+                }
+
+                &:not(:first-child) {
+                  margin-top: 1.6rem;
+
+                  @media (max-width: 767px) {
+                    margin-top: .8rem;
+                  }
+                }
+              }
+            }
+          }
+
+          .iconList {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 3.2rem;
+
+            @media (max-width: 767px) {
+              margin-top: 1.6rem;
+            }
+
+            &_item {
+              width: 14rem;
+
+              @media (max-width: 767px) {
+                width: 4.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cm-sec {
+    margin-top: 4rem;
+
+    @media (max-width: 767px) {
+      margin-top: 2.4rem;
+    }
+
+    &_ttl {
+      font-size: 4rem;
+      position: relative;
+      z-index: 2;
+
+      @media (max-width: 767px) {
+        font-size: 2.4rem;
+      }
+
+      &::before {
+        content: "";
+        width: 8rem;
+        height: 8rem;
+        background-image: url(../img/hamamatu-desc/ttl_obj01.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        left: -1.6%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        z-index: -1;
+
+        @media (max-width: 767px) {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+
+    &_cont {
+      background-color: #f4f1e7;
+      padding: 4rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        padding: 1.6rem;
+        height: 44rem;
+      }
+
+      &::after {
+        content: "";
+        width: 66rem;
+        height: 10rem;
+        background-image: url(../img/hamamatu-desc/sec02_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        right: 4rem;
+
+        @media (max-width: 767px) {
+          width: 32rem;
+          height: 5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+        }
+      }
+
+      .txt {
+        font-size: 2rem;
+        line-height: 150%;
+        margin-top: .6rem;
+
+        @media (max-width: 767px) {
+          font-size: 1.4rem;
+        }
+      }
+
+      .tableWrap {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 1.6rem;
+
+        @media (max-width: 767px) {
+          width: 56rem;
+        }
+
+        thead {
+          tr {
+            background-color: #49b2b3;
+
+            th {
+              font-size: 2.4rem;
+              padding: 1.2rem 0;
+              vertical-align: middle;
+
+              @media (max-width: 767px) {
+                font-size: 1.6rem;
+              }
+
+              &:not(:last-child) {
+                border-right: solid 2px #231815;
+              }
+
+              .s-txt {
+                font-size: 1.8rem;
+
+                @media (max-width: 767px) {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+          }
+        }
+
+        tbody {
+          background-color: #fff;
+
+          tr {
+            td {
+              text-align: center;
+              font-size: 2.4rem;
+              line-height: 150%;
+              padding: 3.2rem 0;
+              vertical-align: middle;
+
+              @media (max-width: 767px) {
+                font-size: 1.4rem;
+                padding: .8rem;
+              }
+
+              &:not(:last-child) {
+                border-right: solid 2px #231815;
+              }
+            }
+          }
+        }
+      }
+
+      .note {
+        display: block;
+        font-size: 1.8rem;
+        line-height: 120%;
+        text-align: right;
+        margin-top: .8rem;
+
+        @media (max-width: 767px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .bottomCont {
+      margin-top: 3.2rem;
+
+      @media (max-width: 767px) {
+        margin-top: 1.6rem;
+      }
+
+      .cm-sec_ttl {
+        &::before {
+          background-image: url(../img/hamamatu-desc/ttl_obj02.svg);
+        }
+      }
+
+      .list {
+        margin-top: 1.6rem;
+        padding-left: 4rem;
+
+        @media (max-width: 767px) {
+          margin-top: .8rem;
+          padding-left: 2.4rem;
+        }
+
+        &_item {
+          font-size: 2.4rem;
+          line-height: 150%;
+
+          @media (max-width: 767px) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    &.sec03 {
+      .cm-sec_cont {
+        @media (max-width: 767px) {
+          height: 40rem;
+        }
+
+        &::after {
+          content: "";
+          width: 19.6rem;
+          height: 10rem;
+          background-image: url(../img/hamamatu-desc/sec03_obj.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          bottom: 0;
+          right: 4rem;
+
+          @media (max-width: 767px) {
+            width: 9.6rem;
+            height: 5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .reservationBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.6rem;
+
+    a {
+      font-size: 2.4rem;
+      line-height: 100%;
+      padding: 3.2rem 4rem;
+      border-radius: 100vmax;
+    }
+  }
+}

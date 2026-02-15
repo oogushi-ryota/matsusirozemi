@@ -1,0 +1,255 @@
+.news {
+  overflow: hidden;
+
+  .mv {
+    width: 100vw;
+  }
+
+  .topics {
+    width: 100%;
+    background-color: rgba($color: #64bbba, $alpha: .6);
+    margin-top: 9rem;
+    padding: 5.6rem 10rem;
+    position: relative;
+
+    @media (max-width: 767px) {
+      margin-top: 5.6rem;
+      padding: 3.2rem 1.6rem;
+    }
+
+    &::before {
+      content: "";
+      width: 32.1rem;
+      height: 8.3rem;
+      background-image: url(../img/news/topics_obj.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: -4rem;
+      left: -4rem;
+
+      @media (max-width: 767px) {
+        width: 16rem;
+        height: 4.3rem;
+        top: -2.4rem;
+        left: -.8rem;
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &_item {
+        a {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 2rem;
+
+          @media (max-width: 767px) {
+            flex-direction: column;
+            gap: 0;
+          }
+
+          .date {
+            font-size: 3.2rem;
+            line-height: 1em;
+
+            @media (max-width: 767px) {
+              font-size: 1.4rem;
+            }
+          }
+
+          .ttl {
+            font-size: 2.8rem;
+            line-height: 1em;
+
+            @media (max-width: 767px) {
+              font-size: 1.6rem;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tabWrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 8rem;
+
+    @media (max-width: 767px) {
+      margin-top: 4rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .ttl {
+      font-size: 2.8rem;
+      line-height: 100%;
+      white-space: nowrap;
+      background-color: rgba($color: #64bbba, $alpha: 1);
+      padding: 1.4rem 1.2rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+        padding: .8rem 1.2rem;
+      }
+    }
+
+    .category-tabList {
+      width: 100%;
+      background-color: rgba($color: #64bbba, $alpha: .6);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 3.2rem;
+      padding: 1.4rem 3.2rem;
+
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+        gap: 2.8rem 4.8rem;
+        padding: 2.4rem;
+      }
+
+      &_item {
+        font-size: 2.8rem;
+        line-height: 100%;
+        opacity: .5;
+        cursor: pointer;
+
+        @media (max-width: 767px) {
+          font-size: 1.6rem;
+        }
+
+        &.is-active {
+          text-decoration: underline;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .archive {
+    margin-top: 4rem;
+  }
+
+  &_detail {
+    width: 100%;
+    background-image: url(../img/news/single_bg.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    padding: 4rem 0;
+
+    @media (max-width: 767px) {
+      padding: 2rem;
+    }
+
+    .detailWrap {
+      width: 149.2rem;
+      // height: 295.8rem;
+      height: auto;
+      margin: 0 auto;
+      padding: 12rem;
+      background-color: #f5f2e8;
+      // background-image: url(../img/news/single_cont-bg.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        padding: 1.2rem;
+        background-image: unset;
+        background-color: #f5f2e8;
+      }
+
+      .ttlArea {
+        .date {
+          font-size: 4.8rem;
+
+          @media (max-width: 767px) {
+            font-size: 1.4rem;
+          }
+        }
+  
+        h2 {
+          color: #214862;
+          font-size: 4.8rem;
+          font-weight: 700;
+          line-height: 120%;
+
+          @media (max-width: 767px) {
+            font-size: 2.4rem;
+            line-height: 150%;
+          }
+        }
+      }
+
+      .thumbnail {
+        margin: 3.2rem 0;
+
+        @media (max-width: 767px) {
+          margin: 1.6rem 0;
+        }
+
+        .img {
+          width: 100%;
+          aspect-ratio: 1200 / 800;
+          margin: 0 auto;
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      p {
+        color: #214862;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 3.2rem 0;
+
+        @media (max-width: 767px) {
+          font-size: 1.4rem;
+          margin: 1.6rem 0;
+        }
+      }
+
+      h3 {
+        color: #214862;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 120%;
+
+        @media (max-width: 767px) {
+          font-size: 2rem;
+          line-height: 150%;
+        }
+      }
+
+      h4 {
+        color: #214862;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 120%;
+
+        @media (max-width: 767px) {
+          font-size: 1.8rem;
+          line-height: 150%;
+        }
+      }
+
+      a {
+        word-break: break-all;
+      }
+    }
+  }
+}
