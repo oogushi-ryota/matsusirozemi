@@ -85,7 +85,7 @@ Template Name: コース・料金
                 <td class="regular">13,750円<span class="s-txt">(税込)</span></td>
                 <td class="regular">11,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
-                <td class="regular">週2回 平日1時間</td>
+                <td class="regular">週2回 平日1時間</td>
               </tr>
             </tbody>
           </table>
@@ -204,21 +204,21 @@ Template Name: コース・料金
                 <td class="regular">16,500円<span class="s-txt">(税込)</span></td>
                 <td class="regular">11,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
-                <td class="regular">週2回 各1時間</td>
+                <td class="regular">週2回 各1時間</td>
               </tr>
               <tr>
                 <td class="course regular">中学2年生</td>
                 <td class="regular">16,500円<span class="s-txt">(税込)</span></td>
                 <td class="regular">11,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
-                <td class="regular">週1回 2時間</td>
+                <td class="regular">週1回 2時間</td>
               </tr>
               <tr>
                 <td class="course regular">中学3年生</td>
                 <td class="regular">17,600円<span class="s-txt">(税込)</span></td>
                 <td class="regular">11,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
-                <td class="regular">週1回 2時間</td>
+                <td class="regular">週1回 2時間</td>
               </tr>
             </tbody>
           </table>
@@ -293,28 +293,28 @@ Template Name: コース・料金
                 <td class="regular">22,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">22,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
-                <td class="regular">週1回 平日90分</td>
+                <td class="regular">週1回 平日90分</td>
               </tr>
               <tr>
                 <td class="course regular">スタンダード英語</td>
                 <td class="regular">22,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">22,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
-                <td class="regular">週1回 平日90分</td>
+                <td class="regular">週1回 平日90分</td>
               </tr>
               <!-- <tr>
                 <td class="course regular">難関英語</td>
                 <td class="regular">22,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">22,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
-                <td class="regular">週1回 平日90分</td>
+                <td class="regular">週1回 平日90分</td>
               </tr> -->
               <tr>
                 <td class="course regular">アドバンス英語</td>
-                <td class="regular">33,000円<span class="s-txt">(税込)</span></td>
+                <td class="regular">22,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">22,000円<span class="s-txt">(税込)</span></td>
                 <td class="regular">2,750円<span class="s-txt">(税込)</span></td>
-                <td class="regular">週1回 平日90分</td>
+                <td class="regular">週1回 平日90分</td>
               </tr>
             </tbody>
           </table>
